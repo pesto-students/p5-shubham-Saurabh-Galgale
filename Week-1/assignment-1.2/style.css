@@ -1,0 +1,116 @@
+* {
+   font-family: 'League Spartan', sans-serif;
+   overflow: hidden;
+}
+
+#asideicons {
+   list-style-type: none;
+   margin: 3px;
+   padding: 0;
+   width: 3%;
+   background-color: #f1f1f1;
+   position: fixed;
+   height: 100%;
+}
+
+li {
+   display: block;
+   color: #000;
+   padding: 35px 16px;
+   text-decoration: none;
+}
+
+nav {
+   margin-left: 15px;
+   height: 315px;
+   display: flex;
+   background-color: #383838;
+   color: white;
+   width: 100%;
+
+}
+
+#img {
+   padding: 60px;
+   padding-left: 100px;
+   height: 200px;
+   width: 200px;
+}
+
+#navsec {
+   margin: 45px;
+}
+
+#navsec h6 {
+   margin: 0px;
+   margin-top: 0px;
+   padding: 2px;
+}
+
+.playicon {
+   display: inline;
+   margin: 20px;
+}
+
+#play {
+   margin-top: 110px;
+   margin-left: 0px;
+}
+
+table {
+   width: 100%;
+   margin-left: 60px;
+   border-spacing: 0;
+   height: 150px;
+   align-items: center;
+   overflow: hidden;
+}
+
+table button {
+   color: blue;
+}
+
+#secondtr {
+   background-color: lightgray;
+}
+
+#fourthtr {
+   background-color: lightgray;
+}
+
+table td {
+   padding-left: 15px;
+   width: 100px;
+}
+
+table tr {
+   text-align: left;
+}
+
+footer {
+   display: flex;
+   background-color: #4682B4;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: left;
+   overflow: hidden;
+}
+
+#footimg {
+   height: 80px;
+   width: 70px;
+   margin: 10px;
+}
+
+footer h3 {
+   padding: 2px;
+
+}
+
+#footicons i {
+   padding-left: 275px;
+   padding-top: 40px;
+}
