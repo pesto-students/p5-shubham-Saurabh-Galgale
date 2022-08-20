@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* div {
+    height: 200px;
+    width: 100%;
+    background-color: lightpink;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+} */
+
+/* navbar style */
+#nav {
+    height: 250px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("img/navbn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: wrap;
+}
+#nav p {
+    font-size: 30px;
+    color: white;
+    text-align: end;
+}
+
+/* JWST style */
+#jwst {
+    height: 100px;
+    background-color: lightcoral; 
+}
+#galaxy {
+    height: 100px;
+    background-color: lightcyan;
+}
+#system {
+    height: 100px;
+    background-color: lightgray;
+}
+#earth {
+    height: 100px;
+    background-color: lightpink;
+}
+#me {
+    height: 100px;
+    background-color: lightgreen;
+}
