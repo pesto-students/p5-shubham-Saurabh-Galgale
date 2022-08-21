@@ -1,54 +1,247 @@
 * {
+    font-family: 'Dancing Script', cursive;
     margin: 0;
     padding: 0;
 }
-/* div {
-    height: 200px;
-    width: 100%;
-    background-color: lightpink;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-} */
 
-/* navbar style */
-#nav {
-    height: 250px;
-    background-color: lightblue;
+#main {
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+        'navbar navbar navbar'
+        'galaxy system earth'
+        'jwst one two'
+        'form form form'
+        'footer footer footer';
+    grid-template-columns: 623px 623px 623px; 
+    grid-template-rows: 200px 560px 560px 560px 200px;
+    padding-left: 3px;
+}
+
+#navbar {
+    grid-area: navbar;
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-image: url("img/navbn.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: wrap;
-}
-#nav p {
-    font-size: 30px;
-    color: white;
-    text-align: end;
+    flex-wrap: wrap;
+    box-shadow: 5px 10px;
 }
 
-/* JWST style */
-#jwst {
-    height: 100px;
-    background-color: lightcoral; 
+#navbar p {
+    font-size: 36px;
+    color: white;
+    text-align: end;
+    padding: 50px 20px 50px 20px;
 }
+
 #galaxy {
-    height: 100px;
-    background-color: lightcyan;
+    grid-area: galaxy;
+    background-color: #607EAA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 5px 10px;
 }
+
+#imggalaxy {
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+    border-radius: 20%;
+}
+
 #system {
-    height: 100px;
-    background-color: lightgray;
+    grid-area: system;
+    background-color: #607EAA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 5px 10px;
 }
+
+#imgsystem {
+    height: 400px;
+    width: 400px;
+    border-radius: 20%;
+}
+
+/* earth */
 #earth {
-    height: 100px;
-    background-color: lightpink;
+    grid-area: earth;
+    background-color: #607EAA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 5px 10px;
+}    
+
+#imgearth {
+    height: 400px;
+    width: 400px;
+    border-radius: 20%;
 }
-#me {
-    height: 100px;
-    background-color: lightgreen;
+
+/* jwst */
+#jwst {
+    grid-area: jwst;
+    background-color: #607EAA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 5px 10px;
+}
+
+#imgjwst {
+    height: 400px;
+    width: 400px;
+    border-radius: 20%;
+}
+
+/* ring */
+#ring {
+    grid-area: one;
+    background-color: #607EAA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 5px 10px;
+}
+#imgring {
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+    border-radius: 20%;
+}
+
+/* fi */
+#fi {
+    grid-area: two;
+    background-color: #607EAA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 5px 10px;
+}
+#imgfi {
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+    border-radius: 20%;
+}
+
+#form {
+    grid-area: form;
+    background-color: #607EAA;
+    border-radius: 5%;
+    box-shadow: 5px 10px;
+    align-items: center;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #1C3879;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 5px 10px;
+}
+#imgfooter {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width:600px) {
+    #main {
+        grid-template-areas:
+            'navbar navbar navbar'
+            'galaxy galaxy galaxy'
+            'system system system'
+            'earth earth earth'
+            'jwst jwst jwst'
+            'one one one'
+            'two two two'
+            'footer footer footer';
+    }
+
+    #navbar {
+        grid-area: navbar;
+        background-color: lightcoral;
+
+    }
+
+    #galaxy {
+        grid-area: galaxy;
+        background-color: lightgreen;
+        height: 400px;
+        width: 100%;
+    }
+
+    #imggalaxy {
+        padding: 10px;
+    }
+
+    #system {
+        grid-area: system;
+        background-color: lightpink;
+        height: 400px;
+        width: 100%;
+    }
+
+    #imgsystem {
+        padding: 10px;
+    }
+
+    #earth {
+        grid-area: earth;
+        background-color: lightgrey;
+        height: 400px;
+        width: 100%;
+    }
+
+    #imgearth {
+        padding: 10px;
+    }
+
+    #jwst {
+        grid-area: jwst;
+        background-color: lightcoral;
+        height: 400px;
+        width: 100%;
+    }
+
+    #imgjwst {
+        padding: 10px;
+    }
+
+    #one {
+        grid-area: one;
+        background-color: lightcyan;
+        height: 200px;
+        width: 100%;
+    }
+
+    #two {
+        grid-area: two;
+        background-color: lightcoral;
+        height: 200px;
+        width: 100%;
+    }
+
+    #footer {
+        grid-area: footer;
+        background-color: black;
+    }
+
 }
