@@ -3,21 +3,24 @@
     margin: 0;
     padding: 0;
 }
-
 #main {
     display: grid;
     grid-column-gap: 15px;
     grid-row-gap: 20px;
     grid-template-areas:
-        'navbar navbar navbar'
-        'galaxy system earth'
-        'jwst one two'
-        'form form form'
-        'footer footer footer';
+            'navbar navbar navbar'
+            'galaxy system earth'
+            'jwst ring fi'
+            'form form form'
+            'footer footer footer';
     grid-template-columns: 623px 623px 623px; 
-    grid-template-rows: 200px 560px 560px 560px 200px;
+    grid-template-rows: 200px 580px 580px 300px 200px;
     padding-left: 3px;
 }
+
+
+
+
 
 #navbar {
     grid-area: navbar;
@@ -31,7 +34,6 @@
     flex-wrap: wrap;
     box-shadow: 5px 10px;
 }
-
 #navbar p {
     font-size: 36px;
     color: white;
@@ -39,22 +41,43 @@
     padding: 50px 20px 50px 20px;
 }
 
+
+
+
+
 #galaxy {
     grid-area: galaxy;
-    background-color: #607EAA;
+    background-color: #5A8F7B;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5%;
     box-shadow: 5px 10px;
 }
-
 #imggalaxy {
     margin: 10px;
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 500px;
     border-radius: 20%;
 }
+#galaxy h1 {
+    font-size: 40px;
+    color: white;
+}
+#galaxy p {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+#galaxy:hover {
+    background-color: darkcyan;
+}
+
+
+
+
+
+
 
 #system {
     grid-area: system;
@@ -65,29 +88,61 @@
     border-radius: 5%;
     box-shadow: 5px 10px;
 }
-
 #imgsystem {
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 500px;
     border-radius: 20%;
 }
+#system h1 {
+    font-size: 40px;
+    color: white;
+}
+#system p {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+#system:hover {
+    background-color: darkcyan;
+}
+
+
+
+
 
 /* earth */
 #earth {
     grid-area: earth;
-    background-color: #607EAA;
+    background-color: #5A8F7B;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5%;
     box-shadow: 5px 10px;
 }    
-
 #imgearth {
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 500px;
     border-radius: 20%;
 }
+#earth h1 {
+    font-size: 40px;
+    color: white;
+}
+#earth p {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+#earth:hover {
+    background-color: darkcyan;
+}
+
+
+
+
+
+
 
 /* jwst */
 #jwst {
@@ -99,17 +154,33 @@
     border-radius: 5%;
     box-shadow: 5px 10px;
 }
-
 #imgjwst {
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 500px;
     border-radius: 20%;
 }
+#jwst h1 {
+    font-size: 40px;
+    color: white;
+}
+#jwst p {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+#jwst:hover {
+    background-color: darkcyan;
+}
+
+
+
+
+
 
 /* ring */
 #ring {
-    grid-area: one;
-    background-color: #607EAA;
+    grid-area: ring;
+    background-color: #5A8F7B;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,15 +188,33 @@
     box-shadow: 5px 10px;
 }
 #imgring {
-    margin: 10px;
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 500px;
     border-radius: 20%;
 }
+#ring h1 {
+    font-size: 40px;
+    color: white;
+}
+#ring p {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+#ring:hover {
+    background-color: darkcyan;
+}
+
+
+
+
+
+
+
 
 /* fi */
 #fi {
-    grid-area: two;
+    grid-area: fi;
     background-color: #607EAA;
     display: flex;
     flex-direction: column;
@@ -135,18 +224,45 @@
 }
 #imgfi {
     margin: 10px;
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 500px;
     border-radius: 20%;
 }
+#fi h1 {
+    font-size: 40px;
+    color: white;
+}
+#fi p {
+    margin: 2px;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+#fi:hover {
+    background-color: darkcyan;
+}
+
+
+
+
+
+
 
 #form {
     grid-area: form;
-    background-color: #607EAA;
+    background-color: #A8A4CE;
     border-radius: 5%;
     box-shadow: 5px 10px;
-    align-items: center;
 }
+#txtform {
+    font-size: 20px;
+    text-align: center;
+    margin: 6px;
+}
+
+
+
+
 
 #footer {
     grid-area: footer;
@@ -162,6 +278,8 @@
     border-radius: 50%;
 }
 
+
+
 @media only screen and (max-width:600px) {
     #main {
         grid-template-areas:
@@ -170,78 +288,90 @@
             'system system system'
             'earth earth earth'
             'jwst jwst jwst'
-            'one one one'
-            'two two two'
+            'ring ring ring'
+            'fi fi fi'
+            'form form form'
             'footer footer footer';
+        grid-template-rows: 200px 500px 500px 500px 500px 500px 500px 500px 200px;    
+
+           
     }
 
     #navbar {
         grid-area: navbar;
-        background-color: lightcoral;
+        width: 100%;
 
     }
 
     #galaxy {
         grid-area: galaxy;
-        background-color: lightgreen;
-        height: 400px;
+        background-color: #607EAA;
         width: 100%;
+     
     }
 
     #imggalaxy {
-        padding: 10px;
+        padding: 8px;
     }
 
     #system {
         grid-area: system;
-        background-color: lightpink;
-        height: 400px;
+        background-color: #607EAA;
         width: 100%;
+       
     }
 
     #imgsystem {
-        padding: 10px;
+        padding: 8px;
     }
 
     #earth {
         grid-area: earth;
-        background-color: lightgrey;
-        height: 400px;
+        background-color: #607EAA;
         width: 100%;
     }
 
     #imgearth {
-        padding: 10px;
+        padding: 8px;
     }
 
     #jwst {
         grid-area: jwst;
-        background-color: lightcoral;
-        height: 400px;
+        background-color:  #607EAA;
         width: 100%;
     }
 
     #imgjwst {
-        padding: 10px;
+        padding: 8px;
     }
 
-    #one {
-        grid-area: one;
-        background-color: lightcyan;
-        height: 200px;
+    #ring {
+        grid-area: ring;
+        background-color: #607EAA;
         width: 100%;
     }
 
-    #two {
-        grid-area: two;
-        background-color: lightcoral;
-        height: 200px;
+    #fi {
+        grid-area: fi;
+        background-color: #607EAA;
         width: 100%;
+    }
+
+    #txtform {
+        font-size: 50px;
     }
 
     #footer {
         grid-area: footer;
-        background-color: black;
+        background-color: #607EAA;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    #footerdiv {
+        padding-left: 8px;
+        color: white;
     }
 
 }
