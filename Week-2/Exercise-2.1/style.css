@@ -255,7 +255,7 @@
     box-shadow: 5px 10px;
 }
 #txtform {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     margin: 6px;
 }
@@ -269,13 +269,19 @@
     background-color: #1C3879;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     box-shadow: 5px 10px;
+    align-items: center;
+    justify-content: center;
 }
 #imgfooter {
     height: 200px;
     width: 200px;
     border-radius: 50%;
+}
+#footerdiv {
+    align-items: center;
+    color: white;
+    padding-left: 16px;
 }
 
 
