@@ -1,47 +1,76 @@
 #main {
     position: absolute;
-  height: 500px;
-  width: 500px;
+  height: 200px;
+  width: 200px;
   margin: 200px;
-  /* padding: 20px; */
   border: 1px solid black;
+  transition-property: all;
+  transition-duration: 1s;
 }
 #main h1 {
   position: absolute;
   font-size: 50px;
-
-  right: 225px;
-  bottom: 190px;
+  right: 75px;
+  bottom: 35px;
   z-index: -1;
+ 
 }
+#main:hover #one{
+   transform: rotate(90deg) translateY(100px);
+} 
+#main:hover #two{
+  transform: rotate(-90deg) translateY(100px);
+} 
+#main:hover #three{
+  transform: rotate(-90deg) translateY(-100px);
+} 
+#main:hover #four{
+  transform: rotate(90deg) translateY(-100px);
+} 
+
 #one {
     height: 100px;
     width: 100px;
     background-color: red;
   position: absolute;
-  right: 250px;
-  bottom: 250px;
+  /* right: 250px;
+  bottom: 250px; */
+  animation-name: example;
+  animation-duration: 2s;
+  
   transition-property: all;
   transition-duration: 1s;
   /* transition-timing-function: ease-in-out; */
   
- } 
-#one:hover {
- 
-  /* transform-origin: 0px 0px; */
+}
+
+/* #one:hover {
   transform: rotate(90deg) translateY(100px);
-  /* translateX(10px) translateY(10px) */
+} */
+
+
+
+
+
+
+/* @keyframes example {
+  0%   {}
+ 
+  100% {transform: rotate(90deg) translateY(100px);}
+  
+} */
+
+
  
 
-}   
+   
     
 #two {
     height: 100px;
     width: 100px;
     background-color: yellow;
     position: absolute;
-  top: 250px;
-  right: 250px;
+  right: 0;
   transition-property: all;
   transition-duration: 1s;
 
@@ -49,36 +78,35 @@
   
   
 }
-#two:hover {
+/* #two:hover {
   transform: rotate(-90deg) translateY(-100px);
-}
+} */
 
 #three {
   position: absolute;
     height: 100px;
     width: 100px;
     background-color: blue;
-    left: 250px;
-    bottom: 250px;
+    bottom: 0px;
     transition-property: all;
     transition-duration: 1s;
     
 }
-#three:hover {
+/* #three:hover {
   transform: rotate(-90deg) translateY(100px);
-}
+} */
 
 #four {
   position: absolute;
     height: 100px;
     width: 100px;
     background-color: green;
-    left: 250px;
-    top: 250px;
+    right: 0;
+    bottom: 0px;
     transition-property: all;
     transition-duration: 1s;
     
 }
-#four:hover {
+/* #four:hover {
   transform: rotate(90deg) translateY(-100px);
-}
+} */
