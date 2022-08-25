@@ -15,28 +15,27 @@
   z-index: -1;
  
 }
-#main:hover #one{
+#main:hover #red{
    transform: rotate(90deg) translateY(100px);
 } 
-#main:hover #two{
+#main:hover #yellow{
   transform: rotate(-90deg) translateY(100px);
 } 
-#main:hover #three{
+#main:hover #blue{
   transform: rotate(-90deg) translateY(-100px);
 } 
-#main:hover #four{
+#main:hover #green{
   transform: rotate(90deg) translateY(-100px);
 } 
 
-#one {
+#red {
     height: 100px;
     width: 100px;
     background-color: red;
   position: absolute;
   /* right: 250px;
   bottom: 250px; */
-  animation-name: example;
-  animation-duration: 2s;
+ 
   
   transition-property: all;
   transition-duration: 1s;
@@ -65,7 +64,7 @@
 
    
     
-#two {
+#yellow {
     height: 100px;
     width: 100px;
     background-color: yellow;
@@ -82,7 +81,7 @@
   transform: rotate(-90deg) translateY(-100px);
 } */
 
-#three {
+#blue {
   position: absolute;
     height: 100px;
     width: 100px;
@@ -96,7 +95,7 @@
   transform: rotate(-90deg) translateY(100px);
 } */
 
-#four {
+#green {
   position: absolute;
     height: 100px;
     width: 100px;
