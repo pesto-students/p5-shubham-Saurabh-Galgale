@@ -1,49 +1,19 @@
-// function createStack() {
-//     return {
-//         items: [],
-//         push(items) {
-//             this.items.push(items);
-//         },
-//         pop() {
-//             return this.items.pop();
-//         }
-//     };
-// }
-
-
-
-
-// const stack = createStack();
-// stack.push(10);
-// stack.push(5);
-// // stack.pop();
-// // stack.items;
-// // stack.items = [10, 100, 1000];
-// console.log(stack.pop());
-// console.log(stack.items);
-
-
+// Solution ------------------------------------------------------------------------------------------
 function createStack() {
+    let items = [];
+
     return {
-        items: [],
-        push(items) {
-            this.items.push(items);
+        push: function(item) {
+            items.push(item);
         },
-        pop() {
-            return this.items.pop();
+        pop: function() {
+            return items.pop();
         }
     };
 }
 
-
-
-
 const stack = createStack();
 stack.push(10);
 stack.push(5);
-// stack.pop();
-// stack.items;
-// stack.items = [10, 100, 1000];
-console.log(stack.pop());
-console.log(stack.items);
-
+console.log(stack.pop());// 5
+console.log(stack.items);// undefined
