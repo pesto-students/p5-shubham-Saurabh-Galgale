@@ -1,16 +1,15 @@
 const fib = (n) => ({
-    [Symbol.iterator]: () => {
+    [Symbol.iterator]: () => { // becomes itorable fn.
         let i = 1;
         let old = 0, new1 = 0;
-        return {
+        return { // [symbol.iterator] must return atleast next method.
             next: () => {
                 if(i++ <= n) {
                     [old, new1] = [new1, (old + new1) || 1];
-                    // console.log([old, new1]);
-                    return {value: old, done: false}
+                    return {value: old, done: false} // should return in this format.
                 }
                 else {
-                    return {done: true}
+                    return {done: true} // true stops the itorator.
                 }
             }
         }
@@ -18,4 +17,8 @@ const fib = (n) => ({
 });
 
 
-console.log([...fib(20) ]);
+for (const element of fib(20)) {
+    console.log(element);
+}
+
+
