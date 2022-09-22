@@ -1,35 +1,31 @@
-async function myDisplay() {
-    let async1 = new Promise(function(resolve) {
-      setTimeout(function() {resolve("hey i'm First");}, 1000);
-    });
-    let async2 = new Promise(function(resolve) {
-      setTimeout(function() {resolve("I'm Second");}, 2000);
-    });
-    let async3 = new Promise(function(resolve) {
-        setTimeout(function() {resolve("I'm Third");}, 3000);
-      });
-    
-    var firstFn = await async1;
-    console.log(firstFn);
-    var secondFn = await async2;
-    console.log(secondFn);
-    var thirdFn = await async3;
-    console.log(thirdFn);
+const task1 = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("i'm task-1");
+    }, 5000);
+  }).then((x) => console.log(x));
+};
 
-  }
-  
-//   myDisplay();
+const task2 = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("i'm task-2");
+    }, 3000);
+  }).then((x) => console.log(x));
+};
 
+const task3 = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("i'm task-3");
+    }, 1000);
+  }).then((x) => console.log(x));
+};
 
-  function* genfn() {
-      yield 'this is First';
-      yield 'this is Second';
-      yield 'this is Third';
-  }
-  
-  const generatorObj = genfn();
-  
-  console.log(generatorObj.next());
-  console.log(generatorObj.next());
-  console.log(generatorObj.next());
-  console.log(generatorObj.next());// done: True
+async function asyncFn() {
+    await task1();
+    await task2();
+    await task3();
+}
+
+asyncFn();
