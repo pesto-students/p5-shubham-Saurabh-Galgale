@@ -6,10 +6,10 @@ function hasDuplicate(arr) {
 
     const set = [...new Set(arr)];
 
-    console.log(arr.length == set.length);
+    console.log(arr.length > set.length);
 }
 
-hasDuplicate([1, 2, 3]);
+hasDuplicate([1, 2, 3, 3]);
 
 
 // End------------------------------------------------------------------------------------------------------------------
