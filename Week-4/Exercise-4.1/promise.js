@@ -1,5 +1,6 @@
 
 function MyPromise(executor) {
+    let isPending = true;
     let isFulfilled = false;
     let isRejected = false;
     let value;
@@ -12,31 +13,30 @@ function MyPromise(executor) {
     }
 
     function resolve(val) {
-        // console.log("under resolver");
         isFulfilled = true;
         value = val;
     }
 
     function reject(err) {
-        // console.log("under reject");
         isRejected = true;
         error = err;
     }
 
     this.then = function (thenHandler, catchHandler) {
-        // console.log("under then");
-        if (isFulfilled) {
+        if (isFulfilled && isPending) {
             thenHandler(value);
-        }else if(catchHandler && isRejected) {
+            isPending = false;
+        }else if(isPending && isRejected) {
             catchHandler(error);
+            isPending = false;
         }
         return this;
     };
 
     this.catch = function (catchHandler) {
-        // console.log("under catch");
-        if (isRejected) {
+        if (isRejected && isPending) {
             catchHandler(error);
+            isPending = false;
         }
         return this;
     };
@@ -56,4 +56,3 @@ const getNumber = () => {
 }
 
 getNumber();
-
