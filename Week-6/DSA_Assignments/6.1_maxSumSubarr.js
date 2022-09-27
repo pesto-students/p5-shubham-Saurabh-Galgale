@@ -1,18 +1,27 @@
-function maxSubArray(nums) {
-    let maxCurrent = nums[0];
-    let maxGlobal = nums[0];
-    // let subArray = [];
-    for (let i = 1; i < nums.length; i++) {
-      maxCurrent = Math.max(nums[i], maxCurrent + nums[i]);
-      if (maxCurrent > maxGlobal) {
-        maxGlobal = maxCurrent;
-        // subArray.push(nums[i]); 
-      }
+function subArray(arr) {
+  let sum = 0;
+  let maxSum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = arr[i] + sum;
+    if (arr[i] > sum) {
+      sum = arr[i];
     }
-    // console.log(subArray);
-    return maxGlobal;
+    if (sum > maxSum) {
+      maxSum = sum;
+    }
   }
+  return maxSum;
+}
+
+console.log(subArray([1, 2, -10, 3, 4]));
+// console.log(subArray([-10, 2, -10, 3, -20]));
+// console.log(subArray([1, 2, -10, 3, -10]));
+// console.log(subArray([1, -2, 10, -3, 4]));
 
 
-  // console.log(maxSubArray([2, 5, -6, 3, 7, -4, 5]));
-console.log(maxSubArray([-3, 5, -6, -2, 7, -4, -7]));
+
+
+
+
+
+
