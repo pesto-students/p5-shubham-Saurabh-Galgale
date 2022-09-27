@@ -6,9 +6,9 @@ function MyPromise(executor) {
     let value;
     let error;
 
-    try{
+    try {
         executor(resolve, reject);
-    }catch(e){
+    } catch (e) {
         throw (e);
     }
 
@@ -26,9 +26,11 @@ function MyPromise(executor) {
         if (isFulfilled && isPending) {
             thenHandler(value);
             isPending = false;
-        }else if(isPending && isRejected) {
-            catchHandler(error);
-            isPending = false;
+        } else if (isPending && isRejected) {
+            if (catchHandler) {
+                catchHandler(error);
+                isPending = false;
+            }
         }
         return this;
     };
