@@ -13,7 +13,7 @@ function subArray(arr) {
   return maxSum;
 }
 
-console.log(subArray([1, 2, -10, 3, 4]));
+console.log(subArray([-10, 2, 3, 4, 5]));
 // console.log(subArray([-10, 2, -10, 3, -20]));
 // console.log(subArray([1, 2, -10, 3, -10]));
 // console.log(subArray([1, -2, 10, -3, 4]));
