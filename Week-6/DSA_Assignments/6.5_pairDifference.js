@@ -2,10 +2,6 @@ function pairDifference(array, x) {
     let hash = {};
     for (let i = 0; i < array.length; i++) {
         hash[array[i]] = array[i];
-        // if(hash[x + array[i]] && array[i] !== hash[array[i]]) {
-        //     console.log("in if");
-        //     return true;
-        // }
     }
 
     for (let i = 0; i < array.length; i++) {
@@ -15,7 +11,7 @@ function pairDifference(array, x) {
     }
     return false;
 }
-    console.log(pairDifference([0, 10, 20, 50], 30));
+    console.log(pairDifference([10, 20, 0, 50], 20));
 
 
 
