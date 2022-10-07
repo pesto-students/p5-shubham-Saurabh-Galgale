@@ -1,20 +1,31 @@
-function sorting(array) {
-    let obj = {};
-    let sortedArr = [];
-    for(let i = 0; i < array.length; i++) {
-        if(!obj[array[i]]) {
-            obj[array[i]] = 1;
-        }else {
-            obj[array[i]]++;
+var sorting = function (arr) {
+
+    let one = 0,
+        zero = 0,
+        two = 0;
+
+    for (let num of arr) {
+        if (num == 0) {
+            zero++;
+        } else if (num == 1) {
+            one++;
+        } else {
+            two++;
         }
     }
+    arr.length = 0;
 
-    for(let key in obj) {
-        sortedArr.push(parseInt(key));
+    for (let i = 0; i < zero; i++) {
+        arr.push(0);
     }
-    return sortedArr;
-}
+    for (let i = 0; i < one; i++) {
+        arr.push(1);
+    }
+    for (let i = 0; i < two; i++) {
+        arr.push(2);
+    }
 
-console.log(sorting([2, 2, 1, 1, 0]));
+    return arr;
+};
 
-
+console.log(sorting([2, 2, 1, 1, 1, 0]));
