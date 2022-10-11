@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "jest": "^29.0.3"
+  },
+  "name": "jest-5.4",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "calculator.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Saurabh Galgale",
+  "license": "ISC"
+}
