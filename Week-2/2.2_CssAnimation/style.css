@@ -1,0 +1,111 @@
+#main {
+    position: absolute;
+  height: 200px;
+  width: 200px;
+  margin: 200px;
+  border: 1px solid black;
+  transition-property: all;
+  transition-duration: 1s;
+}
+#main h1 {
+  position: absolute;
+  font-size: 50px;
+  right: 75px;
+  bottom: 35px;
+  z-index: -1;
+ 
+}
+#main:hover #red{
+   transform: rotate(90deg) translateY(100px);
+} 
+#main:hover #yellow{
+  transform: rotate(-90deg) translateY(100px);
+} 
+#main:hover #blue{
+  transform: rotate(-90deg) translateY(-100px);
+} 
+#main:hover #green{
+  transform: rotate(90deg) translateY(-100px);
+} 
+
+#red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+  position: absolute;
+  /* right: 250px;
+  bottom: 250px; */
+ 
+  
+  transition-property: all;
+  transition-duration: 1s;
+  /* transition-timing-function: ease-in-out; */
+  
+}
+
+/* #one:hover {
+  transform: rotate(90deg) translateY(100px);
+} */
+
+
+
+
+
+
+/* @keyframes example {
+  0%   {}
+ 
+  100% {transform: rotate(90deg) translateY(100px);}
+  
+} */
+
+
+ 
+
+   
+    
+#yellow {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+  right: 0;
+  transition-property: all;
+  transition-duration: 1s;
+
+  
+  
+  
+}
+/* #two:hover {
+  transform: rotate(-90deg) translateY(-100px);
+} */
+
+#blue {
+  position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    bottom: 0px;
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+/* #three:hover {
+  transform: rotate(-90deg) translateY(100px);
+} */
+
+#green {
+  position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    right: 0;
+    bottom: 0px;
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+/* #four:hover {
+  transform: rotate(90deg) translateY(-100px);
+} */
