@@ -20,6 +20,14 @@ function App() {
     setInput(event.target.value)
   }
 
+  function deleteItem(index) {
+    // console.log("deleted", change);
+    setChange(change.filter((something, indx) => {
+      return index !== indx;
+    }));
+    console.log(change);
+  }
+
   return (
     <>
     <div className='maindiv'>
@@ -31,9 +39,12 @@ function App() {
     /><button className='btn' onClick={setFn}>Add</button>
     </div>
     <div className='todo'>
-    {change.map((prev) => {
-      return <div className='tododiv'><h1 className='todoh1'> {prev} </h1></div>
-    })}
+          {change.map((prev, index) => {
+            return <div className='tododiv'>
+              <h1 className='todoh1'> {prev} </h1>
+              <div id='delete' onClick={() => { deleteItem(index) }}>X</div>
+            </div>
+          })}
     </div>
     </div>
     </>
