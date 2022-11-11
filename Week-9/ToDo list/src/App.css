@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.maindiv {
+    background-color: #C1A3A3;
+    height: 700px;
+    width: 60%;
+    position: relative;
+    margin: 4rem auto 4rem auto;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 20px;
+    border-color: black;
+}
+
+.inbtn {
+    /* position: sticky; */
+    /* z-index: 1; */
+    /* top: 1rem; */
+    height: 8rem;
+    border-radius: 20px;
+    background-color: #886F6F;
+    border-color: black;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    background-color: #694E4E;
+    position: relative;
+    font-size: 32px;
+    width: 40%;
+    padding: 8px;
+    border-radius: 20px;
+    border-color: black;
+    color: white;
+    margin: 20px;
+}
+
+.btn {
+    position: relative;
+    font-size: 32px;
+    width: fit-content;
+    padding: 8px;
+    background-color: #694E4E;
+    border-color: black;
+    color: white;
+    margin: 4px;
+    border-radius: 20px;
+}
+
+.todo {
+    height: 500px;
+    background-color: #886F6F;
+    border-radius: 20px;
+    margin: 20px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.tododiv {
+    background-color: #694E4E;
+    position: relative;
+    min-width: 70%;
+    border-radius: 20px;
+    width: max-content;
+    border-color: black;
+    color: white;
+    height: 3rem;
+    padding: 16px;
+    margin: 8px auto 8px auto;
+}
+
+.todoh1 {
+    font-size: 32px;
+}
+
+#delete {
+    font-size: 32px;
+    position: absolute;
+    right: 10px;
+    color: white;
+    border-radius: 50%;
+}
