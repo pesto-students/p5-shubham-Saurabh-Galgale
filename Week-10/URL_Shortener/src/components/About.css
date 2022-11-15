@@ -1,0 +1,14 @@
+#aboutsec {
+    width: 50%;
+    margin: 10rem auto;
+    color: white;
+}
+#aboutsec h1 {
+    font-size: 7rem;
+}
+#aboutsec p{
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: gold;
+}

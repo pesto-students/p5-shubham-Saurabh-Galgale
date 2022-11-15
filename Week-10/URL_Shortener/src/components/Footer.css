@@ -1,0 +1,12 @@
+#footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    background-image: radial-gradient(black, transparent);
+}
+
+#footer h1 {
+    font-size: 3rem;
+}
