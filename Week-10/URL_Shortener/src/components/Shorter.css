@@ -1,0 +1,42 @@
+#urldiv {
+    margin: 22vh auto auto auto;
+    width: 90%;
+    max-height: max-content;
+    text-align: center;
+}
+
+#urldiv h1 {
+    color: white;
+    font-size: 8rem;
+    margin-bottom: 8rem;
+    background-image: radial-gradient(black, transparent);
+}
+
+#inp {
+    width: 72%;
+    height: 5vh;
+    font-size: 2rem;
+    padding: 4px;
+}
+
+#btn {
+    width: 15%;
+    font-size: 2rem;
+    height: 7vh;
+    color: black;
+    background-image: linear-gradient(rgb(218, 165, 32), rgb(243, 210, 125));
+}
+
+#para {
+    color: white;
+    height: 10vh;
+    min-width: 45%;
+    width: max-content;
+    margin: 2rem auto;
+    /* padding: 2rem; */
+    font-size: 4rem;
+    /* border-radius: 20px; */
+    border: 5px solid gold;
+    border-radius: 25px;
+    /* background-image: linear-gradient(rgb(218, 165, 32), rgb(243, 210, 125)); */
+}

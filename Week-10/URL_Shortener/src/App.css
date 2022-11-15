@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  max-height: 100vh;
+}
+
+body {
+  background-image: url("./ban3.jpg");
+  background-size: 100% 100vh;
+}
