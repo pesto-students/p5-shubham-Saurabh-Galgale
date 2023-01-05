@@ -9,9 +9,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 let cities = require("./cities");
 
-let currentWeather = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=c506053a1428f34a67cc0f8468922318&units=metric';
-let WeatherForecast = 'https://api.openweathermap.org/data/2.5/forecast?q=mumbai&cnt=40&appid=c506053a1428f34a67cc0f8468922318&units=metric';
-
 app.get("/weather", (req, res) => {
     let city = req.query.city;
     if (!city) {
