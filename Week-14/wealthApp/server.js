@@ -1,15 +1,19 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-port = process.env.PORT || 5000;
-app.use(express.urlencoded({ extended: false }));
-const router = require('./routes/user-routes');
-const mongoose = require('mongoose');
+app.use(express.json());
+require('dotenv').config()
+const port = process.env.PORT || 5000;
 
-app.use("/wealth", router);
+const { connectDB } = require("./config/conn");
+connectDB();
 
-mongoose.connect(
-    'mongodb://localhost:27017/wealth'
-    ).then(() => app.listen(port)
-    ).then(() => console.log(`connected to DB & listening on ${port}`)
-    ).catch((e) => console.log(e));
+const userRoutes = require("./routes/routes");
 
+const cors = require("cors");
+app.use(cors());
+
+app.get("/", (req, res) => res.send({ status: "API running!" }));
+
+app.use("/", userRoutes);
+
+app.listen(port, () => console.log(`Server started on PORT ${port}`));
