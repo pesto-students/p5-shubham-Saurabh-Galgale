@@ -1,0 +1,124 @@
+* {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    position: relative;
+    border: solid;
+    height: 100vh;
+}
+
+#nav {
+    position: absolute;
+    background-color: lightgrey;
+    width: 3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 4px;
+
+}
+
+#nav li {
+    padding-top: 4rem;
+}
+
+#section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #383838;
+    margin-left: 3%;
+}
+
+#imgsection {
+    margin: 32px;
+    height: 250px;
+    width: 250px;
+}
+
+#sectxt {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    margin: 35px;
+    height: 250px;
+}
+
+#secicon {
+    display: flex;
+    flex-direction: row;
+    padding-top: 180px;
+    padding-right: 8px;
+}
+
+#secicon h4 {
+    margin-left: 5px;
+    padding-right: 16px;
+}
+
+#section h6 {
+    padding-top: 4px;
+}
+
+#table {
+    margin-left: 4%;
+    height: 4rem;
+    width: 96%;
+    border-collapse: collapse;
+    column-gap: 40px;
+    overflow-y: auto;
+}
+
+td {
+    padding: 16px;
+}
+
+button {
+    color: blue;
+}
+
+tr:nth-child(even) {
+    background: lightgrey;
+}
+
+#footer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    background-color: rgb(67, 104, 156);
+    margin-top: 2rem;
+    align-items: center;
+    color: white;
+}
+
+#footer h3 {
+    margin: 16px;
+    padding: 4px;
+}
+
+#imgfooter {
+    height: 100px;
+    width: 100px;
+    margin: 8px;
+}
+
+#footicon {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-evenly;
+    padding-left: 8px;
+
+}
