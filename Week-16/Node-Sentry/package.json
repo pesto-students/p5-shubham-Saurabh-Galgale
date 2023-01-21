@@ -1,0 +1,15 @@
+{
+  "name": "sentry-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saurabh Galgale",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^7.30.0",
+    "@sentry/tracing": "^7.30.0"
+  }
+}
